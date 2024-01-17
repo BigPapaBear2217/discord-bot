@@ -1,0 +1,86 @@
+install tutorial discord bot
+
+this a bot that generate art from text whit the apis from https://modelslab.com
+
+step-by-step tutorial:
+
+
+1. Install Anaconda:
+If you don't have Anaconda installed, download and install it from the official website: Anaconda Downloads
+
+2. Open Anaconda Navigator:
+After installation, open Anaconda Navigator, a graphical user interface for managing your conda environments and packages.
+
+3. Create a new environment:
+Click on the "Environments" tab in Anaconda Navigator and create a new environment. Name it whatever you prefer, for example, "discord-bot-tutorial". Choose your Python version (recommend Python 3.7 or above).
+
+4. Open a terminal in the new environment:
+Navigate to the "Home" tab in Anaconda Navigator, select your newly created environment, and click on "Open Terminal."
+
+5. Install necessary dependencies:
+In the terminal, use the following commands to install the required packages:
+
+bash
+Copy code
+conda install -c anaconda discord.py
+conda install -c conda-forge pillow
+conda install -c conda-forge requests
+6. Create a new Python file:
+Using a text editor or an integrated development environment (IDE) like VSCode or Jupyter Notebook, create a new Python file, for example, discord_bot.py.
+
+7. Copy and paste your Discord bot code:
+Copy and paste the provided Discord bot code into your discord_bot.py file.
+
+8. Replace TOKEN and API_KEY:
+Replace the TOKEN .take discord bot token 
+
+API_KEY from https://modelslab.com create an account
+
+9. Save the file:
+Save your discord_bot.py file.
+
+10. Run the bot:
+In the terminal, navigate to the directory where your discord_bot.py file is located and run the bot using the following command:
+
+bash
+Copy code
+python discord_bot.py
+
+11. Invite the bot to your Discord server:
+
+Create a new Discord bot on the Discord Developer Portal, copy the bot token, and invite the bot to your server.
+
+12. Give Bot permissions
+
+Read Messages (READ_MESSAGES):
+
+Required for the bot to read messages in text channels.
+Send Messages (SEND_MESSAGES):
+
+Needed for the bot to send messages in text channels.
+Read Message History (READ_MESSAGE_HISTORY):
+
+Required to read the message history, allowing the bot to respond to old messages.
+Add Reactions (ADD_REACTIONS):
+
+Necessary if you want the bot to react to messages, such as adding the "🔄" reaction in your code.
+Attach Files (ATTACH_FILES):
+
+Required for sending images or files.
+Embed Links (EMBED_LINKS):
+
+Needed for the bot to send embedded messages, which might be used to display images.
+Use External Emojis (USE_EXTERNAL_EMOJIS):
+
+Required if your bot uses external emojis in messages or reactions.
+Read Message Content (READ_MESSAGE_CONTENT):
+
+Needed for your bot to access the content of messages. This permission is necessary for the /mid command in your code.
+
+13. Test the bot:
+In your Discord server, use the /mid command with a prompt to generate images and test your bot.
+ 
+ Bot still have bugs but works whitout problem
+
+ want to check old work generated from the bot on the discord channel join here
+ https://discord.gg/RRJfRkk6
